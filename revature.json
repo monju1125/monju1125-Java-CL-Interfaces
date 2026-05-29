@@ -1,0 +1,25 @@
+{
+  "type": "java",
+  "testFiles": [
+    {
+      "path": "src/test/java/ObjectToBeComparedTest.java",
+      "testCases": [
+        {
+          "methodName": "comparableObjectTest1",
+          "label": "Verify compareTo returns 0 for equal values",
+          "description": "Creates two SampleClassC objects with the same val field and checks that compareTo returns 0."
+        },
+        {
+          "methodName": "comparableObjectTest2",
+          "label": "Verify compareTo returns a negative value when obj1 < obj2",
+          "description": "Creates obj1 with a smaller val than obj2 and verifies that obj1.compareTo(obj2) returns a negative number."
+        },
+        {
+          "methodName": "comparableObjectTest3",
+          "label": "Verify compareTo returns a positive value when obj1 > obj2",
+          "description": "Creates obj1 with a greater val than obj2 and checks that obj1.compareTo(obj2) returns a positive number."
+        }
+      ]
+    }
+  ]
+}
