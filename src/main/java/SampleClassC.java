@@ -29,7 +29,7 @@ public class SampleClassC implements Comparable<SampleClassC>{
     public int compareTo(SampleClassC other) {
 
         SampleClassC sc = (SampleClassC) other;
-        if ((sc.equals(other))) return 0;
+        if (other.val == sc.val) return 0;
             else if (sc.val < other.val) return -1;
               else return 1; 
     }
