@@ -27,11 +27,11 @@ public class SampleClassC implements Comparable<SampleClassC>{
      * @param other another object of type SampleClassC, which we are comparing to 'this' object.
      */
     public int compareTo(SampleClassC other) {
-
+        
         SampleClassC sc = (SampleClassC) other;
-        if (other.val == sc.val) return 0;
-            else if (other.val < sc.val) return -1;
-              else return +1; 
+        if (this.val == sc.val) return 0;
+            else if (this.val < sc.val) return -1;
+              else return 1; 
     }
 
 }
